@@ -61,12 +61,7 @@ public Gui() {
 				//set bounds, type, and layout
 				contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 				setContentPane(contentPane);
-				contentPane.setLayout(
-						new MigLayout(
-						"", "[90px][90px][90px,grow][90px][90px]"
-						, "[28px][28px,grow][28px][28px][28px][28px][28px][]"
-								)
-						);
+				contentPane.setLayout(new MigLayout("","[90px][90px][90px,grow][90px][90px]","[28px][28px,grow][28px][28px][28px][28px][28px][]"));
 			//buttons and other sub-objects
 				//button 7
 				JButton btnNb_7 = new JButton("7");
