@@ -1,8 +1,4 @@
 /**
- * 
- */
-/**
- * @author benavide_957502
- *
- */
+* @author Ethan P Benavides
+*/
 package calc;
