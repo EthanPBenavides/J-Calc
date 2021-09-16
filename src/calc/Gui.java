@@ -36,13 +36,6 @@ public static Loops startup = new Loops();
 public static JTextArea input = new JTextArea();
 static String x = "";
 
-public static void main(final String[] args) {
-startup.setup();
-in.clear();
-startup.update();
-}
-//end main
-
 /**
  * Gui constructor: defines the Gui features and action listeners.
  */
