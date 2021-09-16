@@ -18,24 +18,10 @@ import net.miginfocom.swing.MigLayout;
 public class Gui extends JFrame {
 
 private static final long serialVersionUID = -1484385940874378393L;
-/**
- * Reserves JPanel as contentPane.
- */
+
 private JPanel contentPane;
-/**
- * defines the input array list.
- */
 private static ArrayList<String> in = new ArrayList<String>();
-
-/**
- * Creates the startup object using the loops constructor
- * This allows for the setup and loop methods to be run.
- * @param args
- */
-public static Loops startup = new Loops();
 public static JTextArea input = new JTextArea();
-static String x = "";
-
 /**
  * Gui constructor: defines the Gui features and action listeners.
  */
@@ -86,7 +72,6 @@ public Gui() {
           public void actionPerformed(final ActionEvent e) {
           input.setText(null);
           in.clear();
-          x = "";
              }
           });
           contentPane.add(btnClear, "flowy,cell 4 3,grow");
@@ -201,7 +186,7 @@ public Gui() {
            btnEql.addActionListener(new ActionListener() {
            public void actionPerformed(final ActionEvent e) {
            for (int i = 0; i <= in.size(); i++) {
-           Loops.eval(in.get(i));
+           
               }
              }
           });
@@ -218,20 +203,5 @@ public Gui() {
          //clear text box
            input.setText("");
            in.add(0, "");
-  }
-public static void render() {
-	for(int i = 0; i < in.size();) {
-	try {
-			x = x + in.get(i);
-			i++;
-		}
-	catch(Exception e){
-			System.out.println("Something went wrong.");
-		}
-	finally {
-			input.setText(x);
-		}
-	}
-	input.setText(x);
   }
 }
